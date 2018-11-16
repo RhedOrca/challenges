@@ -1,0 +1,14 @@
+public class Main {
+
+	public static void main(String[] args) {
+		int hour = 3; 
+		int minute = 40;
+		double minutePos = minute*6;
+		double hourPos = (hour*30) + (minute/2);
+		double angle = Math.abs(hourPos-minutePos);
+		if (angle > 180) {
+			angle = 360-angle;
+		}
+		System.out.println(angle);
+	}	
+}
